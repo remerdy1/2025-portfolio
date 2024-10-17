@@ -1,0 +1,77 @@
+:root {
+  --blue: rgb(0, 217, 255);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111821;
+  color: white;
+  font-family: "Poppins", serif;
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  font-size: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-item {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav-item > a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-item > a:hover {
+  color: var(--blue);
+}
+
+h1 {
+  font-size: xxx-large;
+}
+
+section {
+  padding: 5rem 3rem;
+  min-height: 100vh;
+}
+
+#typing-effect::after {
+  content: "";
+  width: 1px;
+  height: 4rem;
+  border-right: 1px solid gray;
+  animation: flash 1s infinite ease;
+}
+
+#home {
+  text-align: center;
+}
+
+.sub-header {
+  color: bisque;
+  text-decoration: underline;
+}
+
+.keyword {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+@keyframes flash {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
